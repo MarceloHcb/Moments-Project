@@ -49,7 +49,6 @@ export class MomentFormComponent implements OnInit {
 
   onFileSelected(event: any) {
     const file: File = event.target.files[0];
-
     this.momentForm.patchValue({ image: event.target.files[0] });
   }
 
